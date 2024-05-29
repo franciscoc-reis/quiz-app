@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./quizstyle.css">
+    
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <div class="center">
+                <h1>Quiz Doutor Dente</h1>
+            </div>
+        </header>
+    
+        <section id="instructions" class="center">
+            <h2>Você cuida da sua saúde bucal?</h2>
+            <h3>Teste seus conhecimento sobre saúde bucal e divirta-se.</h3>
+            <button id="startBtn">Iniciar</button>
+        </section>
+    
+        <section id="quiz">
+            <div>
+                <h3 class="left">Pontos:  <span id="displayScore">0</span></h3>
+                <h3 class="right">Pergunta: <span id="displayQCount">1</span> de  5</h3>
+            </div>
+            <div>
+                <h2 id="askQuestion" class="center"></h2>
+    
+                <form id="form">
+                    <div>
+                        <input id="label0" type="radio" name="option" value="">
+                        <label id="answer0" for=""></label>
+                    </div>
+                    <div>
+                        <input id="label1" type="radio" name="option" value="">
+                        <label id="answer1" for=""></label>
+                    </div>
+                    <div>
+                        <input id="label2" type="radio" name="option" value="">
+                        <label id="answer2" for=""></label>
+                    </div>
+                    <div>
+                        <input id="label3" type="radio" name="option" value="">
+                        <label id="answer3" for=""></label>
+                    </div>
+                </form>
+    
+            <button id="submitBtn">Próxima</button>
+            </div>
+        </section>
+    
+        <section id="showScore">
+            <h2 id="inform" class="center"></h2>
+            <button id="resetBtn">Jogar novamente?</button>
+        </section>
+    
+    </div>
+    
+
+    <script src="./scriptquiz.js"></script>
+</body>
+</html>
